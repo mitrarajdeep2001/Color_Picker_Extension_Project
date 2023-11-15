@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+} */
+
+.popup {
+  width: 400px;
+}
+
+.popup .picker {
+  background-color: rgba(0, 255, 255, 0.274);
+  padding-block: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picker #color-picker {
+  border: none;
+  outline: none;
+  background-color: crimson;
+  color: #ffffff;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+#color-picker:hover {
+  background-color: rgb(151, 5, 35);
+}
+
+.picked-color {
+  margin: 10px 15px;
+}
+
+.picked-color header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .clear-all {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+.picked-color .all-colors {
+  margin-block: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-colors .color {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  width: calc(100% / 3);
+}
+
+.all-colors .color .preview {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.all-colors .color .value {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
